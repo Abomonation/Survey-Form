@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback! Please take a moment to fill out this survey.</p>
+  </header>
+  
+  <main>
+    <form id="survey-form">
+      <!-- Name Field -->
+      <label id="name-label" for="name">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your full name" 
+        required>
+      
+      <!-- Email Field -->
+      <label id="email-label" for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required>
+      
+      <!-- Number Field -->
+      <label id="number-label" for="number">Age:</label>
+      <input 
+        type="number" 
+        id="number" 
+        name="age" 
+        min="18" 
+        max="99" 
+        placeholder="Enter your age" 
+        required>
+      
+      <!-- Dropdown -->
+      <label for="dropdown">What is your favorite hobby?</label>
+      <select id="dropdown" name="hobby" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="reading">Reading</option>
+        <option value="sports">Sports</option>
+        <option value="gaming">Gaming</option>
+        <option value="traveling">Traveling</option>
+      </select>
+      
+      <!-- Radio Buttons -->
+      <p>How did you hear about us?</p>
+      <label>
+        <input 
+          type="radio" 
+          name="source" 
+          value="friend" 
+          required>
+        Friend
+      </label>
+      <label>
+        <input 
+          type="radio" 
+          name="source" 
+          value="social-media" 
+          required>
+        Social Media
+      </label>
+      <label>
+        <input 
+          type="radio" 
+          name="source" 
+          value="advertisement" 
+          required>
+        Advertisement
+      </label>
+      
+      <!-- Checkboxes -->
+      <p>Which of these topics interest you? (Check all that apply)</p>
+      <label>
+        <input 
+          type="checkbox" 
+          name="interest" 
+          value="technology">
+        Technology
+      </label>
+      <label>
+        <input 
+          type="checkbox" 
+          name="interest" 
+          value="health">
+        Health
+      </label>
+      <label>
+        <input 
+          type="checkbox" 
+          name="interest" 
+          value="finance">
+        Finance
+      </label>
+      
+      <!-- Textarea -->
+      <label for="comments">Additional Comments:</label>
+      <textarea 
+        id="comments" 
+        name="comments" 
+        rows="5" 
+        placeholder="Share your thoughts with us"></textarea>
+      
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
